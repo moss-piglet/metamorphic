@@ -1,0 +1,53 @@
+# The directory Mix will write compiled artifacts to.
+/_build/
+
+# If you run "mix test --cover", coverage assets end up here.
+/cover/
+
+# The directory Mix downloads your dependencies sources to.
+/deps/
+
+# Where 3rd-party dependencies like ExDoc output generated docs.
+/doc/
+
+# Ignore .fetch files in case you like to edit your project deps locally.
+/.fetch
+
+# If the VM crashes, it generates a dump, let's ignore it too.
+erl_crash.dump
+
+# Also ignore archive artifacts (built via "mix archive.build").
+*.ez
+
+# Always ignore any environment files.
+*.env
+
+# Ignore any directories/files containing Petal Pro code per their license
+**/live
+**/metamorphic_web/templates
+**/notifications
+**/views/layout_view.ex
+**/views/error_helpers.ex
+**/metamorphic_web/application.ex
+**/metamorphic_web/endpoint.ex
+**/metamorphic_web/helpers.ex
+**/org_plugs.ex
+**/metamorphic_web/components
+**/metamorphic_web/assets
+**apps/metamorphic/priv
+**/metamorphic/accounts
+**/metamorphic/extensions/ecto
+**/metamorphic/extensions/csv
+**/metamorphic/orgs
+**/metamorphic/logs
+**/metamorphic/vendor
+**/metamorphic/logs.ex
+**/metamorphic/orgs.ex
+**/metamorphic/background_task.ex
+**/metamorphic/accounts.ex
+**/metamorphic_web/menus.ex
+**/metamorphic_web/nav.ex
+**/metamorphic_web/person_on_mount_hooks.ex
+**/metamorphic_web/router.ex
+**apps/metamorphic_web/priv
+config
