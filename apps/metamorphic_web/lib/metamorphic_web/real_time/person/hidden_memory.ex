@@ -15,7 +15,7 @@ defmodule MetamorphicWeb.RealTime.Person.HiddenMemory do
     Phoenix.PubSub.broadcast!(
       MetamorphicWeb.PubSub,
       @topic <> "#{current_person.id}",
-      {:update_memory_hide_or_reveal, memory}
+      {:update_memory_hide, memory}
     )
 
     {:ok, memory}
@@ -25,7 +25,7 @@ defmodule MetamorphicWeb.RealTime.Person.HiddenMemory do
     Phoenix.PubSub.broadcast!(
       MetamorphicWeb.PubSub,
       @topic <> "#{current_person.id}",
-      {:update_memory_hide_or_reveal, memory}
+      {:update_memory_reveal, memory}
     )
 
     {:ok, memory}
