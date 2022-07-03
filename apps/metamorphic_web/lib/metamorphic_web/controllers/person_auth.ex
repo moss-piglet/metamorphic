@@ -236,7 +236,7 @@ defmodule MetamorphicWeb.PersonAuth do
   Used for routes that require the person to be a admin
   """
   def require_admin_person(conn, _opts) do
-    if conn.assigns[:current_person] && conn.assigns[:current_person].is_admin do
+    if conn.assigns[:current_person] && (conn.assigns[:current_person].is_admin || (conn.assigns[:current_person].privileges === :admin)) do
       conn
     else
       conn
